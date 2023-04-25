@@ -26,7 +26,7 @@ public class Main {
         } catch (InputMismatchException e) {
             System.err.println("Podano niewłaściwy format koniec programu");
         }
-        if (integerList.isEmpty()) {
+        if (!integerList.isEmpty()) {
             printNumbersInOpositeWay(integerList);
             printTheSumOfTheNumbers(integerList);
             printSmallestAndLargestNumber(integerList);
