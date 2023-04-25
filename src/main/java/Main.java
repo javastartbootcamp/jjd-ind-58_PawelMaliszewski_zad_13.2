@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
 
@@ -22,10 +23,10 @@ public class Main {
                     negativeNumber = true;
                 }
             }
-        } catch (Exception e) {
+        } catch (InputMismatchException e) {
             System.err.println("Podano niewłaściwy format koniec programu");
         }
-        if (integerList.size() > 0) {
+        if (integerList.isEmpty()) {
             printNumbersInOpositeWay(integerList);
             printTheSumOfTheNumbers(integerList);
             printSmallestAndLargestNumber(integerList);
